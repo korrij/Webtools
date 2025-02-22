@@ -10,7 +10,7 @@ html, body {
 /* Main Content Section - Adds Space */
 main {
     margin: 0;
-    padding: 20px; /* Adds space around the content */
+    padding: 0px; /* Adds space around the content */
 }
 
 /* Header Styling */
@@ -102,11 +102,12 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2em;
-    margin: 0 15px;
+    margin: 0 20px;
+    letter-spacing: 1px; /* Improves readablility */
 }
 
 /* Hover Effect */
-nav a: hover {
+nav a hover {
     color: #FFFFFF; /* White on hover */
     text-decoration: underline;
 }
