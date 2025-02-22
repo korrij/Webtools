@@ -98,16 +98,16 @@ nav {
 
 /* Navigation Links - Improve Readability */
 nav a {
-    color: #FFFFFF; /* Dark purple for strong contrast */
+    color: #FFD700; /* Gold for high contrast */
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2em;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 /* Hover Effect */
 nav a: hover {
-    color: #FFD700; /* Golf for viability */
+    color: #FFFFFF; /* Golf for viability */
     text-decoration: underline;
 }
 
