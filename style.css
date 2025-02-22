@@ -1,7 +1,7 @@
 /* Apply global styles */
 html, body {
     margin: 0;
-    padding: 20;
+    padding: 20px;
     background-color: #FAF3E0; /* Soft warm beige */
     font-family: 'Poppins', sans-serif; /* Modern clean font */
     color: #3E3E3E; /* Dark gray for readability */
