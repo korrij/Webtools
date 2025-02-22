@@ -39,11 +39,17 @@ footer {
 
 /* Footer Styling */
 footer {
+    background-color: #8B2C36; /* Dark red/maroon */
+    padding: 20px;
     text-align: center;
-    background-color: #D98880; /* Muted red-pink */
-    padding: 15px;
-    font-size: 0.9em;
-    color: #3E3E3E; /* Dark gray */
+    font-size: 1em;
+    color: #FFFFFF; /* White text for strong contrast */
+}
+
+footer p.copyright {
+    color: #FFD700;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 /* Remove bullet points from all unordered lists */
@@ -60,13 +66,12 @@ footer ul {
     margin: 0;
 }
 
-/* Footer links */
+/* Footer links - improve visibility */
 footer ul li {
-    color: #2C2C2C; /* Darker color for better contrast */
+    color: #FFD700; /* Gold color for strong contrast */
     font-weight: bold;
     text-decoration: none;
     display: inline;  /* Display links inline */
-    margin-right: 15px;
 }
 
 footer ul li a {
@@ -78,10 +83,11 @@ footer ul li a {
 
 /* Hover effect */
 footer ul li a:hover {
-    color: white;
-    background: #8E3B46; /* Deep rose background */
+    color: #8B2C36;
+    background: #FFD700; /* Gold highlight */
     padding: 5px 8px;
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -95,11 +101,11 @@ nav ul li a {
 
 /* Link Colors */
 a:link {
-    color: #8E3B46; /* Deep rose */
+    color: #f58999; /* Deep rose */
 }
 
 a:visited {
-    color: #9F6B99; /* Soft mauve */
+    color: #d29dcc; /* Soft mauve */
 }
 
 a:hover {
