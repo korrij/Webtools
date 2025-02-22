@@ -107,13 +107,13 @@ nav a {
 
 /* Hover Effect */
 nav a: hover {
-    color: #FFFFFF; /* Golf for viability */
+    color: #FFFFFF; /* White on hover */
     text-decoration: underline;
 }
 
 /* Sidebar Link (Professional, Webtools, Hobbies) */
 #Contents a {
-    color: ##8B2C36; /* Dark purple */
+    color: #D97777; /* Dark purple */
     font-weight: bold;
     text-decoration: none;
     padding: 0;
