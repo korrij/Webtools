@@ -1,10 +1,17 @@
 /* Apply global styles */
 html, body {
     margin: 0;
-    padding: 0;
+    padding: 20;
     background-color: #FAF3E0; /* Soft warm beige */
     font-family: 'Poppins', sans-serif; /* Modern clean font */
     color: #3E3E3E; /* Dark gray for readability */
+}
+
+/* Main Content Section - Adds Space */
+main {
+    margin: 0;
+    padding: 20px; /* Adds space around the content */
+
 }
 
 /* Header Styling */
