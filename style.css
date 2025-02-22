@@ -90,6 +90,7 @@ footer ul li a:hover {
     transition: all 0.3s ease-in-out;
 }
 
+/* Navigation Bar */
 nav {
     background-color: #5A1F5A;
     padding: 10px;
@@ -114,7 +115,7 @@ nav a hover {
 
 /* Sidebar Link (Professional, Webtools, Hobbies) */
 #Contents a {
-    color: #D97777; /* Dark purple */
+    color: #edacac; /* Dark purple */
     font-weight: bold;
     text-decoration: none;
     padding: 0;
@@ -122,8 +123,11 @@ nav a hover {
 
 /* Hover Effect for Sidebar Links */
 #Contents a:hover {
-    color: #FFD700; /* Gold */
-    text-decoration: underline;
+    color:#8B2C36;
+    background: #ea81c6; /* Gold highlight */
+    padding: 5px 6px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 nav ul li a {
@@ -136,7 +140,7 @@ nav ul li a {
 
 /* Link Colors */
 a:link {
-    color: #f58999; /* Deep rose */
+    color: #ffffff; /* Deep rose */
 }
 
 a:visited {
@@ -144,8 +148,8 @@ a:visited {
 }
 
 a:hover {
-    color: white;
-    background: #8E3B46; /* Deep rose */
+    color: rgb(255, 255, 255);
+    background: #9B5DE5; /* Deep rose */
 }
 
 a:active {
