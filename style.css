@@ -90,6 +90,32 @@ footer ul li a:hover {
     transition: all 0.3s ease-in-out;
 }
 
+/* Navigation Links - Improve Readability */
+nav a {
+    color: #5A1F5A;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Hover Effect */
+nav a: hover {
+    color: #FFD700; /* Golf for viability */
+    text-decoration: underline;
+}
+
+/* Sidebar Link (Professional, Webtools, Hobbies) */
+#Contents a {
+    color: #5A1F5A; /* Dark purple */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Hover Effect for Sidebar Links */
+#Contents a:hover {
+    color: #FFD700; /* Gold */
+    text-decoration: underline;
+}
 
 nav ul li a {
     text-decoration: none;
