@@ -184,7 +184,7 @@ th, td {
 
 /* Table row border */
 tr {
-    border-bottom: thin solid #3E3E3E;  /* Dark gray border reflecting your text color */
+    border-bottom: thin solid #bc6868;  /* Dark gray border reflecting your text color */
 }
 
 /* Table header row styling */
@@ -195,12 +195,12 @@ thead tr {
 
 /* Even row styling */
 tbody tr:nth-child(even) {
-    background-color: silver;  /* As in target style */
+    background-color: rgba(181, 146, 170, 0.788);  /* As in target style */
 }
 
 /* Hover effect for table rows */
 tbody tr:hover {
-    background-color: #e9f7e1;  /* Your familiar light green hover color */
+    background-color: #f2cf08f7;  /* Your familiar light green hover color */
 }
 
 /* Add style.css */
