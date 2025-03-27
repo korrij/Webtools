@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <nav id="Contents">
+            <ul>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#webtools">Webtools</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#tourdates">Tour Dates</a></li> <!-- New Link to Tour Dates Section -->
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Webform Mailer</h1>
+        </header>
+
+        <main>
+            <form action="success.html" method="get"> <!-- Action set to success.html and method="get" -->
+                <fieldset class="contact">
+                    <legend>Contact Us</legend>
+                    <p> 
+                        <label for="name">Name:</label> 
+                        <input type="text" id="name" name="name" required>
+                    </p>
+
+                    <p> 
+                        <label for="email">Email:</label> 
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p> 
+                        <label for="favColor">Favorite Color:</label> 
+                        <input type="color" id="favColor" name="favColor" required>
+                    </p>
+
+                    <p> 
+                        <label for="message">Message:</label> 
+                        <textarea id="message" name="message" required></textarea> 
+                    </p>
+
+                    <p> 
+                        <label for="phone">Phone:</label> 
+                        <input type="tel" id="phone" name="phone" required>
+                    </p>
+
+                    <p>
+                        <label for="topic">Topic:</label>
+                        <select id="topic" name="topic">
+                            <option value="general">General</option>
+                            <option value="professional">Professional</option>
+                            <option value="webtools">Webtools</option>
+                            <option value="hobbies">Hobbies</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="state">Favorite State:</label>
+                        <input type="radio" id="state" name="state" value="Texas" required> Texas
+                        <input type="radio" id="state" name="state" value="California" required> California
+                        <input type="radio" id="state" name="state" value="New York" required> New York
+                        <input type="radio" id="state" name="state" value="Florida" required> Florida
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Send">
+                    </p>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <p class="copyright">Copyright &copy; 2025</p>
+            <ul>
+                <li><a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a></li>
+                <li><a href="mailto:j.koroma.c@gmail.com">Email Jessica Koroma</a></li>
+            </ul>
+            <p>Author: <a href="https://www.linkedin.com/in/jkoroma/">LinkedIn Page</a></p>
+        </footer>
+    </body>
+</html>

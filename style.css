@@ -155,3 +155,61 @@ a:hover {
 a:active {
     color: #db9c9c; /* Pastel pink */
 }
+
+.contact {
+    width:70%;
+    margin: 0 auto 20px;
+}
+
+/* Table styling */
+table {
+    width: 60%;  /* Set the width to 60% */
+    margin: 20px auto;  /* Center the table with margin at the top and bottom */
+    border-collapse: collapse;  /* Collapse borders into one single border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Add subtle shadow for depth */
+}
+
+/* Table header styling */
+th {
+    background-color: #4CAF50;  /* Green background for the table headers */
+    color: white;  /* White text color */
+    padding: 10px;  /* Add padding for better spacing */
+    text-align: center;  /* Center the text in the headers */
+    font-size: 1.1em;  /* Slightly larger text for the headers */
+}
+
+/* Table cell styling */
+td {
+    background-color: #f2f2f2;  /* Light gray background for table cells */
+    padding: 8px;  /* Padding for cells */
+    text-align: center;  /* Center text in the table cells */
+    border-bottom: 1px solid #ddd;  /* Light border at the bottom of each cell */
+}
+
+/* Table row hover effect */
+tr:hover {
+    background-color: #e9f7e1;  /* Light green background when hovering over rows */
+}
+
+/* Table caption styling */
+caption {
+    font-size: 1.5em;  /* Larger text size for the caption */
+    font-weight: bold;  /* Bold text for the caption */
+    margin-bottom: 10px;  /* Space below the caption */
+}
+
+/* Responsive table - stack columns on smaller screens */
+@media (max-width: 768px) {
+    table {
+        width: 100%;  /* Set the table to full width on small screens */
+    }
+
+    th, td {
+        display: block;  /* Stack each cell on top of each other */
+        width: 100%;  /* Take up the full width of the container */
+    }
+
+    td {
+        text-align: left;  /* Align the text to the left */
+    }
+}
