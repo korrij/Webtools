@@ -309,3 +309,9 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 #Contents ul li {
     margin: 10px 0;
 }
+
+/* Make radio buttons stack vertically */
+input[type="radio"] {
+    display: block; /* Makes each radio button a block element */
+    margin-bottom: 10px; /* Adds space between each radio button */
+}

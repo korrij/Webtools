@@ -10,19 +10,9 @@
 
         <!-- Main Navigation (Pages) -->
         <nav id="main-nav">
-            <a href="index.html" target="_blank">Index</a> | 
-            <a href="about-us.html" target="_blank">About Us</a> | 
-            <a href="contact-us.html" target="_blank">Contact Us</a>
-        </nav>
-
-        <!-- Sidebar Navigation (On Page Links) -->
-        <nav id="Contents">
-            <ul>
-                <li><a href="#professional">Professional</a></li>
-                <li><a href="#webtools">Webtools</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#tourdates">Tour Dates</a></li> <!-- Link to Tour Dates Section -->
-            </ul>
+            <a href="index.html">Index</a> | 
+            <a href="about-us.html">About Us</a> | 
+            <a href="contact-us.html">Contact Us</a>
         </nav>
 
         <header>
@@ -30,7 +20,7 @@
         </header>
 
         <main>
-            <form action="success.html" method="get">
+            <form action="success.html" method="post"> <!-- Action to success.html, POST method -->
                 <fieldset class="contact">
                     <legend>Contact Us</legend>
                     <p> 
@@ -69,11 +59,21 @@
                     </p>
 
                     <p>
-                        <label for="state">Favorite State:</label>
-                        <input type="radio" id="state" name="state" value="Texas" required> Texas
-                        <input type="radio" id="state" name="state" value="California" required> California
-                        <input type="radio" id="state" name="state" value="New York" required> New York
-                        <input type="radio" id="state" name="state" value="Florida" required> Florida
+                        <label for="stateTexas">Favorite State:</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="stateTexas" name="state" value="Texas" required> Texas
+                    </p>
+
+                    <p>
+                        <input type="radio" id="stateCalifornia" name="state" value="California" required> California
+                    </p>
+
+                    <p>
+                        <input type="radio" id="stateNewYork" name="state" value="New York" required> New York
+                    </p>
+                    <p>
+                        <input type="radio" id="stateFlorida" name="state" value="Florida" required> Florida
                     </p>
 
                     <p>
@@ -88,7 +88,7 @@
             <p class="copyright">Copyright &copy; 2025</p>
             <ul>
                 <li><a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a></li>
-                <li><a href="mailto:j.koroma.c@gmail.com">Email Jessica Koroma</a></li>
+                <li><a href="mailto:j.koroma.c@gmail.com">Send an Email to Jessica Koroma</a></li>
             </ul>
             <p>Author: <a href="https://www.linkedin.com/in/jkoroma/">LinkedIn Page</a></p>
         </footer>
