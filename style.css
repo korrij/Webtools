@@ -104,11 +104,11 @@ nav a {
     text-decoration: none;
     font-size: 1.2em;
     margin: 0 20px;
-    letter-spacing: 1px; /* Improves readablility */
+    letter-spacing: 1px; /* Improves readability */
 }
 
 /* Hover Effect */
-nav a hover {
+nav a:hover {
     color: #FFFFFF; /* White on hover */
     text-decoration: underline;
 }
@@ -157,7 +157,7 @@ a:active {
 }
 
 .contact {
-    width:70%;
+    width: 70%;
     margin: 0 auto 20px;
 }
 
@@ -212,4 +212,100 @@ caption {
     td {
         text-align: left;  /* Align the text to the left */
     }
+}
+
+/* Add this to your existing style.css */
+.contact {
+    width: 60%; /* Set the form's width */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    background-color: #fff; /* Light background color */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Make form elements more responsive */
+input[type="text"], input[type="email"], input[type="color"], input[type="tel"], textarea, select {
+    width: 100%; /* Ensure inputs stretch to the container width */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #5A1F5A; /* Deep maroon */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #8B2C36; /* Lighter maroon */
+}
+
+/* Main Navigation */
+#main-nav {
+    background-color: #5A1F5A; /* Dark red/maroon */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navigation Links - Main navigation */
+#main-nav a {
+    color: #FFD700; /* Gold for high contrast */
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 20px;
+    letter-spacing: 1px; /* Improves readability */
+}
+
+/* Hover Effect */
+#main-nav a:hover {
+    color: #FFFFFF; /* White on hover */
+    text-decoration: underline;
+}
+
+/* Sidebar Navigation */
+#Contents {
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Sidebar Links */
+#Contents a {
+    color: #5A1F5A; /* Dark purple for the on-page links */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+}
+
+/* Hover Effect for Sidebar Links */
+#Contents a:hover {
+    color:#8B2C36;
+    background: #ea81c6; /* Soft highlight */
+    padding: 5px 6px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#Contents ul {
+    list-style-type: none;  /* Remove bullet points */
+    padding: 0;
+}
+
+#Contents ul li {
+    margin: 10px 0;
 }
