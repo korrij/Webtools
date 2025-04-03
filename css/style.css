@@ -123,7 +123,7 @@ nav a:hover {
 
 /* Hover Effect for Sidebar Links */
 #Contents a:hover {
-    color:#8B2C36;
+    color: #8B2C36;
     background: #ea81c6; /* Gold highlight */
     padding: 5px 6px;
     border-radius: 5px;
@@ -203,7 +203,7 @@ tbody tr:hover {
     background-color: #f2cf08f7;  /* Your familiar light green hover color */
 }
 
-/* Add style.css */
+/* Contact form styling */
 .contact {
     width: 60%; /* Set the form's width */
     margin: 0 auto; /* Center the form horizontally */
@@ -215,7 +215,12 @@ tbody tr:hover {
 }
 
 /* Make form elements more responsive */
-input[type="text"], input[type="email"], input[type="color"], input[type="tel"], textarea, select {
+input[type="text"], 
+input[type="email"], 
+input[type="color"], 
+input[type="tel"], 
+textarea, 
+select {
     width: 100%; /* Ensure inputs stretch to the container width */
     padding: 10px;
     margin: 10px 0;
@@ -227,7 +232,8 @@ textarea {
     height: 150px;
 }
 
-input[type="submit"], input[type="reset"] {
+input[type="submit"], 
+input[type="reset"] {
     background-color: #5A1F5A; /* Deep maroon */
     color: white;
     border: none;
@@ -237,7 +243,8 @@ input[type="submit"], input[type="reset"] {
     font-size: 1.1em;
 }
 
-input[type="submit"]:hover, input[type="reset"]:hover {
+input[type="submit"]:hover, 
+input[type="reset"]:hover {
     background-color: #8B2C36; /* Lighter maroon */
 }
 
@@ -299,8 +306,54 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     margin: 10px 0;
 }
 
-/* Make radio buttons stack vertically */
+/* --- Updated Radio Button Styling --- */
+/* Remove the previous block-level style and display radio buttons inline */
 input[type="radio"] {
-    display: block; /* Makes each radio button a block element */
-    margin-bottom: 10px; /* Adds space between each radio button */
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+/* Optional: If you want to group radio buttons nicely */
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 10px;
+}
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.radio-group label input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Increased specificity for return-link */
+a.return-link,
+a.return-link:link,
+a.return-link:visited,
+a.return-link:active,
+a.return-link:focus {
+    color: #2C3E50 !important; /* Dark blue-gray for better visibility */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+a.return-link:hover {
+    background-color: #F1C40F !important; /* Bright yellow highlight on hover */
+    text-decoration: underline;
+}
+
+/* Style the legend to be bold and sit inside the fieldset box */
+fieldset.contact legend {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background-color: #FAF3E0; /* Matches the page background */
 }
