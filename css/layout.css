@@ -1,0 +1,44 @@
+/* layout.css */
+
+/* Container for sidebar and main content */
+.content-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between sidebar and content */
+    margin: 20px; /* Optional: Adjust overall container margin */
+  }
+  
+  /* Sticky Sidebar */
+  #Contents {
+    width: 200px; /* Fixed width for sidebar */
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+    position: sticky;
+    top: 80px; /* Adjust according to your header height */
+  }
+  
+  /* Sidebar list styling */
+  #Contents ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align text to the left */
+  }
+  
+  #Contents li {
+    margin-bottom: 10px; /* Spacing between list items */
+  }
+  
+  /* Main content area styling */
+  .main-content {
+    flex: 1; /* Take up the remaining space */
+    padding: 0 20px; /* Optional: add some padding */
+  }
+  
+  /* Sticky Top Navigation Bar */
+  nav#site {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures nav stays on top of other elements */
+  }
