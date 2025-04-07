@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 100px; /* Adjust this value to match the height of your sticky header */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}
 /* layout.css */
 
 /* Updated Container - no left margin */
@@ -128,3 +132,5 @@ nav#site {
   top: 0;
   z-index: 1000;
 }
+
+
