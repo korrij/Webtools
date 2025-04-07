@@ -1,9 +1,14 @@
-/* Updated Navigation Styling to Match Your Color Scheme */
+/* Updated Navigation Styling to Match Color Scheme */
 
-/* Use your dark maroon for the nav background */
+/* Sticky Top Navigation Bar */
 .topnav {
   background-color: #6e0c6eb9; /* light purple */
   overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 /* Set the link color to gold to complement the maroon background */
@@ -26,4 +31,18 @@
 .topnav a.active {
   background-color: #D97777; /* Soft red accent */
   color: #FFFFFF;
+}
+
+#floating-logo {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  width: 75px;
+  height: auto;
+  z-index: 99999; /* Higher than nav and anything else */
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.85); /* soft white glow base */
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6); /* stronger white glow */
 }
