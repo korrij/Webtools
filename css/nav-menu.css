@@ -1,29 +1,29 @@
-/* Set nav to sticky or fixed */
+/* Updated Navigation Styling to Match Your Color Scheme */
 
-/* Add a black background color to the top navigation */
+/* Use your dark maroon for the nav background */
 .topnav {
-  background-color: #333;
+  background-color: #5A1F5A; /* Dark maroon */
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+/* Set the link color to gold to complement the maroon background */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #FFD700; /* Gold */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
+/* On hover, change the background to a lighter maroon/red tone for contrast */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #8B2C36; /* Lighter maroon/red */
+  color: #FFFFFF; /* White for better readability */
 }
 
-/* Add a color to the active/current link */
+/* Active/current link can have a soft red accent to tie in with your header border */
 .topnav a.active {
-  background-color: #04aa6d;
-  color: white;
+  background-color: #D97777; /* Soft red accent */
+  color: #FFFFFF;
 }
