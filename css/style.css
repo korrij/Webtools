@@ -1,359 +1,268 @@
-/* Apply global styles */
+/* Global Styles */
 html, body {
     margin: 0;
-    padding: 20px;
-    background-color: #FAF3E0; /* Soft warm beige */
-    font-family: 'Poppins', sans-serif; /* Modern clean font */
-    color: #3E3E3E; /* Dark gray for readability */
-}
-
-/* Main Content Section - Adds Space */
-main {
-    margin: 0;
-    padding: 0px; /* Adds space around the content */
-}
-
-/* Header Styling */
-header {
-    border-bottom: 3px solid #D97777; /* Soft red accent */
+    padding: 0;
+    background-color: #FAF3E0;
+    font-family: 'Poppins', sans-serif;
+    color: #3E3E3E;
+  }
+  
+  /* Header */
+  header {
+    position: relative;
+    border-bottom: 3px solid #D97777;
     padding: 20px;
     text-align: center;
-    background: #F8C8C8; /* Light pastel pink */
+    background: #F8C8C8;
     font-weight: bold;
     font-size: 1.5em;
-}
-
-/* Headings */
-h1, h2, h3 {
-    color: #6B3E26; /* Deep brown for contrast */
-}
-
-/* Footer */
-footer {
-    color: #3E3E3E; /* Dark gray */
-    padding: 15px 0;
-    background-color: #D98880; /* Muted red-pink */
-    text-align: center;
-    font-size: 0.9em;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #5A1F5A; /* Dark red/maroon */
-    padding: 20px;
-    text-align: center;
-    font-size: 1em;
-    color: #FFFFFF; /* White text for strong contrast */
-}
-
-footer p.copyright {
-    color: #FFD700;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* Remove bullet points from all unordered lists */
-ul {
-    list-style-type: none;  /* Removes default bullet points */
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    color: #6B3E26;
+  }
+  
+  /* Main */
+  main {
     margin: 0;
     padding: 0;
-}
-
-/* Specific fix for the footer's list */
-footer ul {
-    list-style-type: none;  /* Ensures no bullets in the footer */
-    padding: 0;
-    margin: 0;
-}
-
-/* Footer links - improve visibility */
-footer ul li {
-    color: #FFD700; /* Gold color for strong contrast */
-    font-weight: bold;
-    text-decoration: none;
-    display: inline;  /* Display links inline */
-}
-
-footer ul li a {
-    text-decoration: none;
-    color: #8E3B46; /* Deep rose */
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Hover effect */
-footer ul li a:hover {
-    color: #8B2C36;
-    background: #FFD700; /* Gold highlight */
-    padding: 5px 8px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Navigation Bar */
-nav {
+  }
+  
+  /* Navigation Bar */
+  nav {
     background-color: #5A1F5A;
     padding: 10px;
     text-align: center;
-}
-
-/* Navigation Links - Improve Readability */
-nav a {
-    color: #FFD700; /* Gold for high contrast */
+  }
+  
+  nav a,
+  #main-nav a {
+    color: #FFD700;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2em;
     margin: 0 20px;
-    letter-spacing: 1px; /* Improves readability */
-}
-
-/* Hover Effect */
-nav a:hover {
-    color: #FFFFFF; /* White on hover */
+    letter-spacing: 1px;
+  }
+  
+  nav a:hover,
+  #main-nav a:hover {
+    color: #FFFFFF;
     text-decoration: underline;
-}
-
-/* Sidebar Link (Professional, Webtools, Hobbies) */
-#Contents a {
-    color: #edacac; /* Dark purple */
+  }
+  
+  /* Sidebar Navigation */
+  #Contents {
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  #Contents a {
+    color: #5A1F5A;
     font-weight: bold;
     text-decoration: none;
-    padding: 0;
-}
-
-/* Hover Effect for Sidebar Links */
-#Contents a:hover {
+  }
+  
+  #Contents a:hover {
     color: #8B2C36;
-    background: #ea81c6; /* Gold highlight */
+    background: #ea81c6;
     padding: 5px 6px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
-}
-
-nav ul li a {
+  }
+  
+  #Contents ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #Contents ul li {
+    margin: 10px 0;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #5A1F5A;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    color: #FFFFFF;
+  }
+  
+  footer p.copyright {
+    color: #FFD700;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer ul li {
+    display: inline;
+  }
+  
+  footer ul li a {
     text-decoration: none;
-    font-weight: 600;
-    padding: 8px 12px;
-    border-radius: 5px;
+    color: #FFD700;
+    font-weight: bold;
     transition: all 0.3s ease-in-out;
-}
-
-/* Link Colors */
-a:link {
-    color: #ffffff; /* Deep rose */
-}
-
-a:visited {
-    color: #f6f5a8; /* Soft mauve */
-}
-
-a:hover {
-    color: rgb(255, 255, 255);
-    background: #9B5DE5; /* Deep rose */
-}
-
-a:active {
-    color: #db9c9c; /* Pastel pink */
-}
-
-.contact {
-    width: 70%;
-    margin: 0 auto 20px;
-}
-
-/* Table styling */
-table {
+  }
+  
+  footer ul li a:hover {
+    color: #8B2C36;
+    background: #FFD700;
+    padding: 5px 8px;
+    border-radius: 5px;
+  }
+  
+  /* Table Styles */
+  table {
     border-collapse: collapse;
-    width: 100%;  /* Full width as in target style */
+    width: 100%;
     margin: 20px auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Table caption styling */
-table caption {
+  }
+  
+  table caption {
     font-weight: 800;
     font-size: 1.5rem;
     margin-bottom: 10px;
-}
-
-/* Table header and data cell styling */
-th, td {
+  }
+  
+  th, td {
     text-align: left;
     padding: 8px;
-}
-
-/* Table row border */
-tr {
-    border-bottom: thin solid #bc6868;  /* Dark gray border reflecting your text color */
-}
-
-/* Table header row styling */
-thead tr {
-    background-color: #5A1F5A;  /* Dark maroon from your scheme */
-    color: #FAF3E0;  /* Soft warm beige text (mimicking cornsilk) */
-}
-
-/* Even row styling */
-tbody tr:nth-child(even) {
-    background-color: rgba(181, 146, 170, 0.788);  /* As in target style */
-}
-
-/* Hover effect for table rows */
-tbody tr:hover {
-    background-color: #f2cf08f7;  /* Your familiar light green hover color */
-}
-
-/* Contact form styling */
-.contact {
-    width: 60%; /* Set the form's width */
-    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  tr {
+    border-bottom: thin solid #bc6868;
+  }
+  
+  thead tr {
+    background-color: #5A1F5A;
+    color: #FAF3E0;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: rgba(181, 146, 170, 0.788);
+  }
+  
+  tbody tr:hover {
+    background-color: #f2cf08f7;
+  }
+  
+  /* Forms */
+  .contact {
+    width: 60%;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #fff; /* Light background color */
-    border: 1px solid #ddd; /* Subtle border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
-}
-
-/* Make form elements more responsive */
-input[type="text"], 
-input[type="email"], 
-input[type="color"], 
-input[type="tel"], 
-textarea, 
-select {
-    width: 100%; /* Ensure inputs stretch to the container width */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="color"],
+  input[type="tel"],
+  textarea,
+  select {
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-textarea {
+  }
+  
+  textarea {
     height: 150px;
-}
-
-input[type="submit"], 
-input[type="reset"] {
-    background-color: #5A1F5A; /* Deep maroon */
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: #5A1F5A;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1em;
-}
-
-input[type="submit"]:hover, 
-input[type="reset"]:hover {
-    background-color: #8B2C36; /* Lighter maroon */
-}
-
-/* Main Navigation */
-#main-nav {
-    background-color: #5A1F5A; /* Dark red/maroon */
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Navigation Links - Main navigation */
-#main-nav a {
-    color: #FFD700; /* Gold for high contrast */
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.2em;
-    margin: 0 20px;
-    letter-spacing: 1px; /* Improves readability */
-}
-
-/* Hover Effect */
-#main-nav a:hover {
-    color: #FFFFFF; /* White on hover */
-    text-decoration: underline;
-}
-
-/* Sidebar Navigation */
-#Contents {
-    background-color: #f8f8f8;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-/* Sidebar Links */
-#Contents a {
-    color: #5A1F5A; /* Dark purple for the on-page links */
-    font-weight: bold;
-    text-decoration: none;
-    padding: 0;
-}
-
-/* Hover Effect for Sidebar Links */
-#Contents a:hover {
-    color:#8B2C36;
-    background: #ea81c6; /* Soft highlight */
-    padding: 5px 6px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-}
-
-#Contents ul {
-    list-style-type: none;  /* Remove bullet points */
-    padding: 0;
-}
-
-#Contents ul li {
-    margin: 10px 0;
-}
-
-/* --- Updated Radio Button Styling --- */
-/* Remove the previous block-level style and display radio buttons inline */
-input[type="radio"] {
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #8B2C36;
+  }
+  
+  /* Radio Buttons */
+  input[type="radio"] {
     display: inline-block;
     margin-right: 5px;
     vertical-align: middle;
-    margin-bottom: 0;
-}
-
-/* Optional: If you want to group radio buttons nicely */
-.radio-group {
+  }
+  
+  /* Radio Button Group */
+  .radio-group {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     margin-left: 10px;
-}
-.radio-group label {
+  }
+  
+  .radio-group label {
     display: inline-flex;
     align-items: center;
     font-size: 1rem;
-}
-.radio-group label input[type="radio"] {
+  }
+  
+  .radio-group label input[type="radio"] {
     margin-right: 5px;
-}
-
-/* Increased specificity for return-link */
-a.return-link,
-a.return-link:link,
-a.return-link:visited,
-a.return-link:active,
-a.return-link:focus {
-    color: #2C3E50 !important; /* Dark blue-gray for better visibility */
+  }
+  
+  /* Return Link */
+  a.return-link,
+  a.return-link:link,
+  a.return-link:visited,
+  a.return-link:active,
+  a.return-link:focus {
+    color: #2C3E50 !important;
     font-weight: bold;
     text-decoration: none;
     padding: 4px 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-a.return-link:hover {
-    background-color: #F1C40F !important; /* Bright yellow highlight on hover */
+  }
+  
+  a.return-link:hover {
+    background-color: #F1C40F !important;
     text-decoration: underline;
-}
-
-/* Style the legend to be bold and sit inside the fieldset box */
-fieldset.contact legend {
+  }
+  
+  /* Fieldset Styling */
+  fieldset.contact legend {
     font-weight: bold;
     display: block;
     text-align: center;
     padding: 5px 10px;
     margin-bottom: 10px;
-    background-color: #FAF3E0; /* Matches the page background */
-}
+    background-color: #FAF3E0;
+  }
+  
+  /* Floating Logo */
+  #floating-logo {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    width: 75px;
+    height: auto;
+    z-index: 9999;
+    pointer-events: none;
+    filter: drop-shadow(0 0 6px white);
+  }
