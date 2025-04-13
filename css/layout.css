@@ -133,4 +133,196 @@ nav#site {
   z-index: 1000;
 }
 
+/* layout.css */
 
+/* Flexbox layout for nav menu */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-links a,
+.sign-in {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* layout.css */
+
+/* Flexbox layout for nav menu */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-links a,
+.sign-in {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Flexbox layout for team gallery */
+.team-gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  flex-direction: row;
+}
+
+.team-gallery figure {
+  background-color: #ffe0e6; /* Bolder pink background */
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  border-radius: 10px;
+  order: 1; /* Default order for all items */
+}
+
+.team-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.team-gallery figure h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+  color: #6B3E26;
+}
+
+
+/* Updated Navigation Styling to Match Color Scheme */
+
+/* Sticky Top Navigation Bar */
+.main-nav{
+  background-color: #6e0c6eb9; /* light purple */
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Set the link color to gold to complement the maroon background */
+.main-nav a {
+  float: left;
+  color: #FFD700; /* Gold */
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* On hover, change the background to a lighter maroon/red tone for contrast */
+.main-nav a:hover {
+  background-color: #8B2C36; /* Lighter maroon/red */
+  color: #FFFFFF; /* White for better readability */
+}
+
+/* Active/current link can have a soft red accent to tie in with your header border */
+.main-nav a.active {
+  background-color: #D97777; /* Soft red accent */
+  color: #FFFFFF;
+}
+
+#floating-logo {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  width: 75px;
+  height: auto;
+  z-index: 99999; /* Higher than nav and anything else */
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.85); /* soft white glow base */
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6); /* stronger white glow */
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6e0c6eb9;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: #FFD700;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-links a:hover {
+  background-color: #8B2C36;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.sign-in {
+  margin-left: auto;
+  color: #FFD700;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #6e0c6eb9;
+  color: #fff;
+  padding: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  text-align: left;
+}
+
+.footer-column h4 {
+  font-size: 1.1rem;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
