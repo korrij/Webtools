@@ -252,21 +252,6 @@ nav#site {
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.6); /* stronger white glow */
 }
 
-#scroll-logo {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 75px;
-  height: auto;
-  display: none; /* Hidden by default */
-  z-index: 9999;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 6px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-  transition: opacity 0.5s ease-in-out;
-}
-
 .main-nav {
   display: flex;
   justify-content: space-between;
