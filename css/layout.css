@@ -35,22 +35,15 @@ body {
   grid-template-areas:
     "header header header"
     "nav main aside";
-    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 200px 1fr 200px;
   grid-template-rows: auto 1fr;
   gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
 
-  grid-auto-flow: row;        /* controls how new items fill the grid */
-  justify-content: center;    /* aligns the grid tracks horizontally */
-  align-content: start;       /* aligns the grid tracks vertically */
+  
 }
-
-.page-header    { justify-self: center; align-self: start; }
-.page-nav       { justify-self: stretch; align-self: start; }
-.page-main      { justify-self: center; align-self: stretch; }
-.contents-aside { justify-self: end;    align-self: start; }
 
 /* Header */
 .page-header {
@@ -150,20 +143,17 @@ body {
 }
 
 .content-box {
-  /* pull padding out of the card itself */
-  padding: 0;          
-  /* keep your other visual styles here… */
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border: 3.5px solid #d9a79b;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 .content-box h2 {
-  /* push all the padding into the heading, so it spans edge‑to‑edge */
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-
-  margin: 0;               
-  padding: 25px 30px 10px; /* top/right/bottom/left */
-
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 3px solid #ddb6aa;
   text-align: left;
 }
