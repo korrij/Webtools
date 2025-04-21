@@ -69,10 +69,11 @@ body {
   gap: 0.5rem;
 }
 
+/* ↓ Changed here: make background transparent so white text on #7b3d7b passes 4.5:1 ↓ */
 .page-nav .nav-links li a {
   display: block;
-  background-color: #b06fb0;
-  color: #FFFFFF;         /* changed from #FFD700 to white for contrast */
+  background-color: transparent;
+  color: #FFFFFF;         
   text-decoration: none;
   padding: 0.5rem;
   text-align: center;
@@ -81,13 +82,14 @@ body {
 
 .page-nav .nav-links li a:hover {
   background-color: #a05ca0;
-  color: #FFFFFF;         /* ensure hover text stays white */
+  color: #FFFFFF;         /* hover text stays white */
 }
 
+/* ↓ Changed here too ↓ */
 .page-nav .sign-in {
   margin-top: 1rem;
-  background-color: #b06fb0;
-  color: #FFFFFF;         /* normalized to white for contrast */
+  background-color: transparent;
+  color: #FFFFFF;         
   padding: 0.5rem;
   text-align: center;
   border-radius: 4px;
@@ -162,9 +164,10 @@ body {
   align-items: flex-start;
 }
 
+/* ↓ Changed here: use left‑align instead of justify ↓ */
 .section-flex p {
   flex: 1 1 300px;
-  text-align: left;       /* changed from justify to left for accessibility */
+  text-align: left;
 }
 
 .section-flex figure {
