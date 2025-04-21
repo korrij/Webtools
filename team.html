@@ -1,105 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Jessica Koroma: Navigating My Future</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav-menu.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <!-- Favicon links -->
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team - Jessica Koroma</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav-menu.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <!-- Favicon links (if needed) -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png" />
+    <!-- Other favicon links omitted for brevity -->
   </head>
+  <body>
+    <!-- Floating Logo remains the same -->
+    <img
+      id="floating-logo"
+      src="images/logo.png"
+      alt="Lightning Logo"
+      width="75"
+      height="75"
+    />
 
-<body>
-  <header>
-    <h1>Creative Team Showcase</h1>
-  </header>
-  <img id="floating-logo" src="images/logo.png" alt="Lightning Logo" width="75" height="75">
+    <!-- Grid Container: Contains Header, Navigation, Aside, and Main Content -->
+    <div class="grid-container">
+      <!-- HEADER -->
+      <header class="page-header">
+        <h1>Our Team</h1>
+      </header>
 
-  <nav class="main-nav">
-    <div class="nav-links">
-      <a href="index.html">Index</a>
-      <a href="contact-us.html">Contact Us</a>
-      <a href="team.html">Our Team</a>
-    </div>
-    <a class="sign-in" href="#">Sign In</a>
-  </nav>
+      <!-- NAVIGATION: Left column, sticky and listed vertically -->
+      <nav class="page-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Index</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="ourteam.html" class="active">Our Team</a></li>
+          <li><a class="sign-in" href="#">Sign In</a></li>
+        </ul>
+      </nav>
 
-  <main>
-    <section class="team-section">
-      <h2>Our Team</h2>
-      <div class="team-gallery">
-        <figure>
-          <h3>Brand Experience Strategist</h3>
-          <img src="images/Avatar1.png" alt="Kelly - Brand Experience Strategist">
-          <figcaption>
-            <strong>Kelly Price</strong><br>
-            Kelly leads brand storytelling and user journey planning. She turns visions into impactful brand moments.
-          </figcaption>
-        </figure>
+      <!-- ASIDE: "Contents" (sticky with no bullet points) -->
+      <aside class="contents-aside">
+        <h2>Contents</h2>
+        <ul>
+          <li><a href="#team-members">Team Members</a></li>
+          <li><a href="#our-mission">Our Mission</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </aside>
 
-        <figure>
-          <h3>Digital Content Producer</h3>
-          <img src="images/Avatar2.png" alt="Malik - Digital Content Producer">
-          <figcaption>
-            <strong>Malik Rivers</strong><br>
-            Malik produces engaging video, audio, and social media content that brings creativity to every platform.
-          </figcaption>
-        </figure>
+      <!-- MAIN CONTENT -->
+      <main class="page-main">
+        <!-- Section: Team Members Gallery -->
+        <section class="content-box" id="team-members">
+          <h2>Team Members</h2>
+          <div class="team-gallery">
+            <figure>
+              <img src="images/Avatar1.png" alt="Team Member One" />
+              <figcaption>Team Member One</figcaption>
+            </figure>
+            <figure>
+              <img src="images/Avatar2.png" alt="Team Member Two" />
+              <figcaption>Team Member Two</figcaption>
+            </figure>
+            <figure>
+              <img src="images/Avatar3.png" alt="Team Member Three" />
+              <figcaption>Team Member Three</figcaption>
+            </figure>
+            <!-- Repeat as needed for additional team members -->
+          </div>
+        </section>
 
-        <figure>
-          <h3>Creative Operations Manager</h3>
-          <img src="images/Avatar3.png" alt="Amina - Creative Operations Manager">
-          <figcaption>
-            <strong>Amina Brooks</strong><br>
-            Amina manages project timelines and workflows, ensuring every creative idea is executed with precision.
-          </figcaption>
-        </figure>
+        <!-- Section: Our Mission -->
+        <section class="content-box" id="our-mission">
+          <h2>Our Mission</h2>
+          <p>
+            Our mission is to deliver top-notch solutions that drive innovation while
+            fostering a culture of creativity, transparency, and continuous improvement.
+          </p>
+        </section>
+
+        <!-- Section: Contact -->
+        <section class="content-box" id="contact">
+          <h2>Contact</h2>
+          <p>
+            For inquiries, please email us at
+            <a href="mailto:team@example.com">team@example.com</a>.
+          </p>
+        </section>
+      </main>
+    </div> <!-- End of grid-container -->
+
+    <!-- FOOTER: Separated below the grid container -->
+    <footer class="page-footer">
+      <div class="footer-column">
+        <p>&copy;2025</p>
       </div>
-      <p>Flexbox was used to build a responsive layout for the team section, nav bar, and footer. The layout uses properties like flex-wrap, justify-content, and align-items to handle spacing and alignment across screen sizes</p>
-    </section>
-  </main>
-
-  <footer class="footer-container">
-    <div class="footer-column">
-      <h4>External Links</h4>
-      <ul>
-        <li><a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a></li>
-        <br>
-        <li><a href="mailto:j.koroma.c@gmail.com">Email Jessica Koroma</a></li>
-        <br>
-        <li><a href="https://www.linkedin.com/in/jkoroma/">LinkedIn</a></li>
-    
-      </ul>
-    </div>
-  
-    <div class="footer-column">
-      <h4>&copy; 2025</h4>
-      <p>All rights reserved.</p>
-    </div>
-  
-    <div class="footer-column">
-      <h4>Location</h4>
-      <p>Dallas, TX<br>USA</p>
-    </div>
-  </footer>
-</body>
-
+      <div class="footer-column">
+        <ul class="footer-links">
+          <li>
+            <a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a>
+          </li>
+          <li>
+            <a href="mailto:j.koroma.c@gmail.com">Email Jessica Koroma</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p>
+          Author:
+          <a href="https://www.linkedin.com/in/jkoroma/" style="color: #FFD700; font-weight: bold;">LinkedIn Page</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -27,103 +27,143 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <header>
-      <h1>My First Webpage</h1>
-    </header>
-
+    <!-- Floating Logo remains fixed -->
     <img id="floating-logo" src="images/logo.png" alt="Lightning Logo" width="75" height="75">
+    
+    <!-- Grid Container: Contains Header, Navigation, Aside, and Main -->
+    <div class="grid-container">
+      <!-- HEADER -->
+      <header class="page-header">
+        <h1>My First Webpage</h1>
+      </header>
 
-    <nav class="main-nav">
-      <div class="nav-links">
-        <a href="index.html">Index</a>
-        <a href="contact-us.html">Contact Us</a>
-        <a href="team.html">Our Team</a>
+      <!-- NAVIGATION (Left column, sticky) -->
+      <nav class="page-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Index</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a class="sign-in" href="#">Sign In</a></li>
+        </ul>
+      </nav>
+
+      <!-- ASIDE (Contents, right column, sticky; no bullet points) -->
+      <aside class="contents-aside">
+        <h2>Contents</h2>
+        <ul>
+          <li><a href="#professional">Professional</a></li>
+          <li><a href="#webtools">Webtools</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#tourdates">Tour Dates</a></li>
+        </ul>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="page-main">
+        <section class="content-box">
+          <h2 id="professional">Professional Goals</h2>
+          <div class="section-flex">
+            <p>
+              My professional journey is driven by a passion for continuous growth, an eagerness to overcome challenges, and an unwavering commitment to excellence in every project I undertake. I aspire to lead innovative teams that embrace creative problem-solving techniques and consistently deliver impactful digital solutions.
+            </p>
+            <figure>
+              <a href="images/Professional-LG.png">
+                <img src="images/Professional-Sm.png" alt="Professional portrait illustration">
+              </a>
+              <figcaption>Professional Avatar</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="content-box">
+          <h2 id="webtools">Why I am taking Web Design Tools</h2>
+          <div class="section-flex">
+            <p>
+              I enrolled in a Web Design Tools course to enhance my ability to craft visually engaging, innovative, and user-friendly websites that resonate with modern audiences. This comprehensive course offers a unique opportunity to merge creative design principles with practical coding skills.
+            </p>
+            <figure>
+              <a href="images/UX-Lg.png">
+                <img src="images/UX-Sm.png" alt="Illustration of UX design tools and graphics">
+              </a>
+              <figcaption>UX/UI Design Image</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="content-box">
+          <h2 id="hobbies">Personal Hobbies</h2>
+          <div class="section-flex">
+            <p>
+              In my free time, I delight in exploring creative pursuits that balance my professional ambitions. Whether it is digital photography to capture fleeting moments or painting to express my artistic vision, these hobbies constantly inspire me to innovate in all facets of life.
+            </p>
+            <figure>
+              <a href="images/hobbies-Md.png">
+                <img src="images/hobbies-Sm.png" alt="Collage of various colorful hobbies">
+              </a>
+              <figcaption>Colorful Hobbies Graphic</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="tourdates">
+          <h2>Tour Dates</h2>
+          <table>
+            <caption>Coming to a city near you!</caption>
+            <thead>
+              <tr>
+                <th scope="col">City</th>
+                <th scope="col">Date</th>
+                <th scope="col">Venue</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">New York</th>
+                <td>March 25, 2025</td>
+                <td>Madison Square Garden</td>
+              </tr>
+              <tr>
+                <th scope="row">Los Angeles</th>
+                <td>April 5, 2025</td>
+                <td>Hollywood Bowl</td>
+              </tr>
+              <tr>
+                <th scope="row">Chicago</th>
+                <td>April 20, 2025</td>
+                <td>United Center</td>
+              </tr>
+              <tr>
+                <th scope="row">Dallas</th>
+                <td>May 10, 2025</td>
+                <td>American Airlines Center</td>
+              </tr>
+              <tr>
+                <th scope="row">Miami</th>
+                <td>May 25, 2025</td>
+                <td>Fla Live Arena</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div> <!-- End of grid-container -->
+
+    <!-- FOOTER: Separated from the grid container to prevent overlap -->
+    <footer class="page-footer">
+      <div class="footer-column">
+        <p>CopyRight &copy;2025</p>
       </div>
-      <a class="sign-in" href="#">Sign In</a>
-    </nav>
-
-    <main>
-      <div class="content-container">
-        <nav id="Contents">
-          <ul>
-            <li><a href="#professional">Professional</a></li>
-            <li><a href="#webtools">Webtools</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#tourdates">Tour Dates</a></li>
-          </ul>
-        </nav>
-
-        <div class="main-content">
-          <section class="content-box">
-            <h2 id="professional">Professional Goals</h2>
-            <div class="section-flex">
-              <p>My professional journey is driven by a passion for continuous growth, an eagerness to overcome challenges, and an unwavering commitment to excellence in every project I undertake. I aspire to lead innovative teams that embrace creative problem-solving techniques and consistently deliver impactful digital solutions for diverse and evolving audiences. I am deeply committed to expanding my technical expertise by continuously learning emerging technologies while also refining my design skills through practical, hands-on experiences. My long-term career objectives include securing influential leadership roles that allow me to innovate, mentor emerging talents, and contribute positively to the dynamic industry. I actively seek diverse opportunities to collaborate with professionals from varied cultural and technical backgrounds, thereby broadening my perspective and enriching my problem-solving approach. I am eager to embrace challenging projects that stimulate both my creativity and analytical thinking, ensuring steady and measurable progress toward my long-term aspirations. Ultimately, my professional goals are rooted in a desire to leave a lasting positive impact on the digital landscape and inspire future innovators.</p>
-              <figure>
-                <a href="images/Professional-LG.png">
-                  <img src="images/Professional-Sm.png" alt="Professional portrait illustration">
-                </a>
-                <figcaption>Professional Avatar</figcaption>
-              </figure>
-            </div>
-          </section>
-
-          <section class="content-box">
-            <h2 id="webtools">Why I am taking Web Design Tools</h2>
-            <div class="section-flex">
-              <p>I enrolled in a Web Design Tools course to enhance my ability to craft visually engaging, innovative, and user-friendly websites that resonate with modern audiences. This comprehensive course offers a unique opportunity to merge innovative creative design principles with practical, hands-on coding skills in a supportive and dynamic learning environment. I believe that mastering web design tools will not only bolster my technical competence but also broaden my creative horizons. The well-organized course curriculum is structured to provide extensive hands-on experiences that align perfectly with my ambition to innovate and lead in digital design. I am excited to immerse myself in learning new software tools and techniques that will directly contribute to my project work. By actively participating in collaborative assignments and tackling real-world challenges, I aim to refine my technical skills, enhance my design aesthetics, and boost my overall confidence in digital creation. Ultimately, taking this course is a strategic step toward achieving my broader vision of seamlessly merging advanced technology with creative artistic expression to captivate audiences.</p>
-              <figure>
-                <a href="images/UX-Lg.png">
-                  <img src="images/UX-Sm.png" alt="Illustration of UX design tools and graphics">
-                </a>
-                <figcaption>UX/UI design image</figcaption>
-              </figure>
-            </div>
-          </section>
-
-          <section class="content-box">
-            <h2 id="hobbies">Personal Hobbies</h2>
-            <div class="section-flex">
-              <p>In my free time, I delight in exploring a diverse array of creative pursuits that bring balance and renewed energy to my professional ambitions. I have a deep passion for digital photography, which consistently allows me to capture fleeting moments and express my unique artistic vision through compelling imagery. Painting and sketching serve as relaxing outlets where I experiment with colors and forms to create unique visual stories. I also enjoy reading contemporary literature and exploring various genres that broaden my understanding of diverse cultures and ideas. Traveling to new places and experiencing different lifestyles inspire me to integrate fresh perspectives into both my personal and professional life. These consistently enriching experiences continually inspire my innovative creative pursuits. I frequently experiment with web design as a creative hobby, crafting small projects that allow me to test innovative ideas in a relaxed setting. Overall, my hobbies nurture my creativity and resilience, providing a fulfilling escape that enriches my life and fuels my ambition.</p>
-              <figure>
-                <a href="images/hobbies-Md.png">
-                  <img src="images/hobbies-Sm.png" alt="Collage of various colorful hobbies">
-                </a>
-                <figcaption>Colorful hobbies graphic</figcaption>
-              </figure>
-            </div>
-          </section>
-
-          <section id="tourdates">
-            <h2>Tour Dates</h2>
-            <table>
-              <caption>Coming to  a city near you!</caption>
-              <thead>
-                <tr>
-                  <th scope="col">City</th>
-                  <th scope="col">Date</th>
-                  <th scope="col">Venue</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">New York</th><td>March 25, 2025</td><td>Madison Square Garden</td></tr>
-                <tr><th scope="row">Los Angeles</th><td>April 5, 2025</td><td>Hollywood Bowl</td></tr>
-                <tr><th scope="row">Chicago</th><td>April 20, 2025</td><td>United Center</td></tr>
-                <tr><th scope="row">Dallas</th><td>May 10, 2025</td><td>American Airlines Center</td></tr>
-                <tr><th scope="row">Miami</th><td>May 25, 2025</td><td>Fla Live Arena</td></tr>
-              </tbody>
-            </table>
-          </section>
-        </div>
+      <div class="footer-column">
+        <ul class="footer-links">
+          <li><a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a></li>
+          <li><a href="mailto:j.koroma.c@gmail.com">Email Jessica Koroma</a></li>
+        </ul>
       </div>
-    </main>
-
-    <footer>
-      <p class="copyright">Copyright &copy;2025</p>
-      <ul>
-        <li><a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a></li>
-        <li><a href="mailto:j.koroma.c@gmail.com">Email Jessica Koroma</a></li>
-      </ul>
-      <p>Author: <a href="https://www.linkedin.com/in/jkoroma/" style="color: #FFD700; font-weight: bold;">LinkedIn page</a></p>
+      <div class="footer-column">
+        <p>
+          Author: <a href="https://www.linkedin.com/in/jkoroma/" style="color: #FFD700; font-weight: bold;">LinkedIn Page</a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

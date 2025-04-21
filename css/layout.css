@@ -1,194 +1,238 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
-  scroll-padding-top: 100px; /* Adjust this value to match the height of your sticky header */
-  scroll-behavior: smooth; /* Smooth scrolling effect */
-}
-/* layout.css */
-
-/* Updated Container - no left margin */
-.content-container {
-  display: flex;
-  align-items: flex-start;
-  margin: 0;
-  padding: 0;
-  gap: 20px;
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
 }
 
-/* Sticky Sidebar Positioned to Far Left */
-#Contents {
-  width: 220px;
-  background-color: #f0e4e4; /* soft contrast pink */
-  padding: 20px 15px;
-  border-right: 3px solid #d9a79b;
-  height: 100vh;
+body {
+  background-color: #fadadd; /* Light, soft background */
+  font-family: Arial, sans-serif;
+}
+
+/* Floating Logo */
+#floating-logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 75px;
+  height: auto;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+/* Grid Container: Header, Nav, Main, Aside */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main aside";
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+.page-header {
+  grid-area: header;
+  background-color: #ffe0e6;
+  color: #333;           /* Darker text for legibility */
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navigation (sticky) */
+.page-nav {
+  grid-area: nav;
+  background-color: #7b3d7b;
+  padding: 1rem;
   position: sticky;
-  top: 80px;
-  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.05);
+  top: 80px;             /* Match your header height */
+  z-index: 10;
 }
 
-/* Sidebar list styling */
-#Contents ul {
+.page-nav .nav-links {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-
-#Contents li {
-  margin-bottom: 12px;
-}
-
-#Contents a {
-  color: #5A1F5A;
-  font-weight: bold;
+.page-nav .nav-links li a {
+  display: block;
+  background-color: #b06fb0;
+  color: #FFD700;
   text-decoration: none;
-  transition: 0.3s;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 4px;
 }
-
-#Contents a:hover {
-  color: #8B2C36;
-  background-color: #fdeef1;
-  padding: 5px 8px;
+.page-nav .nav-links li a:hover {
+  background-color: #a05ca0;
+  color: #fff;
+}
+.page-nav .sign-in {
+  margin-top: 1rem;
+  background-color: #b06fb0;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
   border-radius: 4px;
 }
 
-/* Main Content */
-.main-content {
-  flex: 1;
-  padding: 30px 40px;
+/* Aside (Contents, sticky) */
+.contents-aside {
+  grid-area: aside;
+  background-color: #f3adbb;
+  padding: 1rem;
+  position: sticky;
+  top: 80px;
 }
 
-.content-box,
-#tourdates {
-  max-width: 1080px;
-  margin: 10px auto;
-  padding: 25px 30px;
+.contents-aside h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contents-aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contents-aside ul li {
+  margin-bottom: 0.5rem;
+}
+
+.contents-aside ul li a {
+  display: block;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 4px;
+}
+.contents-aside ul li a:hover {
+  background-color: #fdeef1;
+}
+
+/* Main Content */
+.page-main {
+  grid-area: main;
+  background-color: #fff;
+  padding: 1rem;
+}
+.content-box {
+  margin-bottom: 2rem;
   background-color: #fff;
   border: 3.5px solid #d9a79b;
   border-radius: 10px;
+  padding: 25px 30px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-.content-box h2,
-#tourdates h2 {
-  max-width: 1080px;
-  margin: 0 auto 20px;
-  text-align: left;
+.content-box h2 {
+  margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 3px solid #ddb6aa;
-}
-
-.content-box .section-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.content-box p {
-  max-width: 85ch;
-  line-height: 1.6;
-  margin: 0 auto;
   text-align: left;
-  flex: 1;
 }
 
-.content-box figure {
-  margin: 0;
-  flex-shrink: 0;
-  text-align: center;
-  max-width: 160px;
-}
-
-.content-box img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-}
-
-.content-container {
+.section-flex {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
   align-items: flex-start;
-  gap: 0px;
-  margin: 20px;
 }
 
-#Contents {
-  width: 200px;
-  background-color: #f8f8f8;
-  padding: 15px;
-  border-radius: 5px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 80px;
-  height: fit-content;
-  align-self: flex-start;
+.section-flex p {
+  flex: 1 1 300px;
+  text-align: justify;
 }
 
-nav#site {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.section-flex figure {
+  flex: 0 1 300px;
+  text-align: center;
 }
 
-/* layout.css */
-
-/* Flexbox layout for nav menu */
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 10px;
+section#tourdates table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
 }
 
-.nav-links a,
-.sign-in {
+section#tourdates table caption {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+section#tourdates th,
+section#tourdates td {
+  border: 1px solid #ccc;
+  padding: 0.75em;
+  text-align: center;
+}
+
+/* Footer (separate three-column layout) */
+.page-footer {
+  background-color: #7b3d7b;
   color: white;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #FFD700;
   text-decoration: none;
-  margin: 0 20px;
 }
 
-/* layout.css */
-
-/* Flexbox layout for nav menu */
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 10px;
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
-.nav-links a,
-.sign-in {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-/* Flexbox layout for team gallery */
+/* Team Gallery (for your Our Team page) */
 .team-gallery {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
-  flex-direction: row;
+  justify-content: center;
 }
 
 .team-gallery figure {
-  background-color: #ffe0e6; /* Bolder pink background */
+  background-color: #ffe0e6;
   border: 2px solid #ccc;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   padding: 10px;
   text-align: center;
   width: 200px;
   border-radius: 10px;
-  order: 1; /* Default order for all items */
 }
 
 .team-gallery img {
@@ -197,132 +241,8 @@ nav#site {
   border-radius: 8px;
 }
 
-.team-gallery figure h3 {
-  margin-top: 0;
-  font-size: 1.1em;
+.team-gallery figcaption {
+  margin-top: 10px;
+  font-size: 1em;
   color: #6B3E26;
-}
-
-
-/* Updated Navigation Styling to Match Color Scheme */
-
-/* Sticky Top Navigation Bar */
-.main-nav{
-  background-color: #6e0c6eb9; /* light purple */
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  width: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-/* Set the link color to gold to complement the maroon background */
-.main-nav a {
-  float: left;
-  color: #FFD700; /* Gold */
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* On hover, change the background to a lighter maroon/red tone for contrast */
-.main-nav a:hover {
-  background-color: #8B2C36; /* Lighter maroon/red */
-  color: #FFFFFF; /* White for better readability */
-}
-
-/* Active/current link can have a soft red accent to tie in with your header border */
-.main-nav a.active {
-  background-color: #D97777; /* Soft red accent */
-  color: #FFFFFF;
-}
-
-#floating-logo {
-  position: fixed;
-  top: 10px;
-  right: 15px;
-  width: 75px;
-  height: auto;
-  z-index: 99999; /* Higher than nav and anything else */
-  pointer-events: none;
-  background-color: rgba(255, 255, 255, 0.85); /* soft white glow base */
-  border-radius: 50%;
-  padding: 6px;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6); /* stronger white glow */
-}
-
-.main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #6e0c6eb9;
-  padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.nav-links {
-  display: flex;
-}
-
-.nav-links a {
-  color: #FFD700;
-  margin-right: 20px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.nav-links a:hover {
-  background-color: #8B2C36;
-  color: #FFFFFF;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-
-.sign-in {
-  margin-left: auto;
-  color: #FFD700;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  background-color: #6e0c6eb9;
-  color: #fff;
-  padding: 30px;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.footer-column {
-  flex: 1;
-  min-width: 200px;
-  text-align: left;
-}
-
-.footer-column h4 {
-  font-size: 1.1rem;
-  color: #FFD700;
-  margin-bottom: 10px;
-}
-
-.footer-column ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-column ul li {
-  margin-bottom: 8px;
-}
-
-.footer-column a {
-  color: #FFD700;
-  text-decoration: none;
-}
-
-.footer-column a:hover {
-  text-decoration: underline;
 }
