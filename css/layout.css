@@ -68,23 +68,26 @@ body {
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .page-nav .nav-links li a {
   display: block;
   background-color: #b06fb0;
-  color: #FFD700;
+  color: #FFFFFF;         /* changed from #FFD700 to white for contrast */
   text-decoration: none;
   padding: 0.5rem;
   text-align: center;
   border-radius: 4px;
 }
+
 .page-nav .nav-links li a:hover {
   background-color: #a05ca0;
-  color: #fff;
+  color: #FFFFFF;         /* ensure hover text stays white */
 }
+
 .page-nav .sign-in {
   margin-top: 1rem;
   background-color: #b06fb0;
-  color: #fff;
+  color: #FFFFFF;         /* normalized to white for contrast */
   padding: 0.5rem;
   text-align: center;
   border-radius: 4px;
@@ -123,6 +126,7 @@ body {
   text-align: center;
   border-radius: 4px;
 }
+
 .contents-aside ul li a:hover {
   background-color: #fdeef1;
 }
@@ -158,11 +162,9 @@ body {
   align-items: flex-start;
 }
 
-/* Changed here: remove full justification */
 .section-flex p {
   flex: 1 1 300px;
-  /* text-align: justify; */
-  text-align: left;
+  text-align: left;       /* changed from justify to left for accessibility */
 }
 
 .section-flex figure {

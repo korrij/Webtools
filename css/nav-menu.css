@@ -20,7 +20,7 @@
 
 /* Nav Link Styling */
 .nav-links a {
-  color: #FFD700; /* Gold */
+  color: #FFFFFF; /* changed from #FFD700 to white—meets WCAG 4.5:1 */
   text-decoration: none;
   font-size: 17px;
   padding: 14px 16px;
@@ -28,20 +28,20 @@
 
 /* Hover Effect */
 .nav-links a:hover {
-  background-color: #8B2C36; /* Lighter maroon/red */
+  background-color: #8B2C36;
   color: #FFFFFF;
   border-radius: 4px;
 }
 
 /* Active Link Styling */
 .nav-links a.active {
-  background-color: #D97777; /* Soft red accent */
+  background-color: #D97777;
   color: #FFFFFF;
 }
 
 /* Sign In Button Style */
 .sign-in {
-  color: #FFD700;
+  color: #FFFFFF; /* changed from gold to white for contrast */
   font-weight: bold;
   text-decoration: none;
   padding: 14px 16px;
@@ -69,3 +69,9 @@
   padding: 6px;
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
 }
+
+
+
+
+
+
