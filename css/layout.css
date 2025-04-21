@@ -41,7 +41,16 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+
+  grid-auto-flow: row;        /* controls how new items fill the grid */
+  justify-content: center;    /* aligns the grid tracks horizontally */
+  align-content: start;       /* aligns the grid tracks vertically */
 }
+
+.page-header    { justify-self: center; align-self: start; }
+.page-nav       { justify-self: stretch; align-self: start; }
+.page-main      { justify-self: center; align-self: stretch; }
+.contents-aside { justify-self: end;    align-self: start; }
 
 /* Header */
 .page-header {
