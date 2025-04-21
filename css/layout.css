@@ -133,6 +133,7 @@ body {
   background-color: #fff;
   padding: 1rem;
 }
+
 .content-box {
   margin-bottom: 2rem;
   background-color: #fff;
@@ -157,9 +158,11 @@ body {
   align-items: flex-start;
 }
 
+/* Changed here: remove full justification */
 .section-flex p {
   flex: 1 1 300px;
-  text-align: justify;
+  /* text-align: justify; */
+  text-align: left;
 }
 
 .section-flex figure {
