@@ -1,116 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team - Jessica Koroma</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/nav-menu.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <!-- Favicon links (if needed) -->
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png" />
-    <!-- Other favicon links omitted for brevity -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #fffaf0;
+        color: #3b3b3b;
+        margin: 0;
+        padding: 0;
+      }
+      .team-gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 20px;
+      }
+      .team-gallery figure {
+        text-align: center;
+        width: 150px;
+      }
+      .team-gallery img {
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+      .team-gallery figcaption {
+        margin-top: 8px;
+        font-weight: 600;
+      }
+      footer {
+        text-align: center;
+        padding: 24px;
+        background-color: #fff0f5;
+        margin-top: 40px;
+        font-size: 0.9rem;
+      }
+      footer a {
+        color: #d47fa6;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <!-- Floating Logo remains the same -->
-    <img
-      id="floating-logo"
-      src="images/logo.png"
-      alt="Lightning Logo"
-      width="75"
-      height="75"
-    />
+    <img id="floating-logo" src="images/logo.png" alt="Lightning Logo" width="75" height="75">
 
-    <!-- Grid Container: Contains Header, Navigation, Aside, and Main Content -->
-    <div class="grid-container">
-      <!-- HEADER -->
-      <header class="page-header">
-        <h1>Our Team</h1>
-      </header>
+    <header class="w3-center w3-padding-32">
+      <h1 class="w3-xxlarge">Our Team</h1>
+    </header>
 
-      <!-- NAVIGATION: Left column, sticky and listed vertically -->
-      <nav class="page-nav">
-        <ul class="nav-links">
-          <li><a href="index.html">Index</a></li>
-          <li><a href="contact-us.html">Contact Us</a></li>
-          <li><a href="ourteam.html" class="active">Our Team</a></li>
-          <li><a class="sign-in" href="#">Sign In</a></li>
-        </ul>
-      </nav>
+    <nav class="w3-bar w3-light-grey w3-padding">
+      <a href="index.html" class="w3-bar-item w3-button">Index</a>
+      <a href="contact-us.html" class="w3-bar-item w3-button">Contact Us</a>
+      <a href="ourteam.html" class="w3-bar-item w3-button w3-pale-red">Our Team</a>
+      <a href="#" class="w3-bar-item w3-button w3-right">Sign In</a>
+    </nav>
 
-      <!-- ASIDE: "Contents" (sticky with no bullet points) -->
-      <aside class="contents-aside">
-        <h2>Contents</h2>
-        <ul>
-          <li><a href="#team-members">Team Members</a></li>
-          <li><a href="#our-mission">Our Mission</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </aside>
+    <main class="w3-container w3-white w3-card w3-round-large w3-margin-top">
+      <section id="team-members">
+        <h2 class="w3-text-pink">Team Members</h2>
+        <div class="team-gallery">
+          <figure>
+            <img src="images/Avatar1.png" alt="Team Member One">
+            <figcaption>Team Member One</figcaption>
+          </figure>
+          <figure>
+            <img src="images/Avatar2.png" alt="Team Member Two">
+            <figcaption>Team Member Two</figcaption>
+          </figure>
+          <figure>
+            <img src="images/Avatar3.png" alt="Team Member Three">
+            <figcaption>Team Member Three</figcaption>
+          </figure>
+        </div>
+      </section>
 
-      <!-- MAIN CONTENT -->
-      <main class="page-main">
-        <!-- Section: Team Members Gallery -->
-        <section class="content-box" id="team-members">
-          <h2>Team Members</h2>
-          <div class="team-gallery">
-            <figure>
-              <img src="images/Avatar1.png" alt="Team Member One" />
-              <figcaption>Team Member One</figcaption>
-            </figure>
-            <figure>
-              <img src="images/Avatar2.png" alt="Team Member Two" />
-              <figcaption>Team Member Two</figcaption>
-            </figure>
-            <figure>
-              <img src="images/Avatar3.png" alt="Team Member Three" />
-              <figcaption>Team Member Three</figcaption>
-            </figure>
-            <!-- Repeat as needed for additional team members -->
-          </div>
-        </section>
-
-        <!-- Section: Our Mission -->
-        <section class="content-box" id="our-mission">
-          <h2>Our Mission</h2>
-          <p>
-            Our mission is to deliver top-notch solutions that drive innovation while
-            fostering a culture of creativity, transparency, and continuous improvement.
-          </p>
-        </section>
-
-        <!-- Section: Contact -->
-        <section class="content-box" id="contact">
-          <h2>Contact</h2>
-          <p>
-            For inquiries, please email us at
-            <a href="mailto:team@example.com">team@example.com</a>.
-          </p>
-        </section>
-      </main>
-    </div> <!-- End of grid-container -->
-
-    <!-- FOOTER: Separated below the grid container -->
-    <footer class="page-footer">
-      <div class="footer-column">
-        <p>&copy;2025</p>
-      </div>
-      <div class="footer-column">
-        <ul class="footer-links">
-          <li>
-            <a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a>
-          </li>
-          <li>
-            <a href="mailto:j.koroma.c@gmail.com">Email Jessica Koroma</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-column">
+      <section id="our-mission" class="w3-margin-top">
+        <h2 class="w3-text-pink">Our Mission</h2>
         <p>
-          Author:
-          <a href="https://www.linkedin.com/in/jkoroma/" style="color: #FFD700; font-weight: bold;">LinkedIn Page</a>
+          Our mission is to deliver top-notch solutions that drive innovation while fostering a culture of creativity, transparency, and continuous improvement.
         </p>
-      </div>
+      </section>
+
+      <section id="contact" class="w3-margin-top">
+        <h2 class="w3-text-pink">Contact</h2>
+        <p>
+          For inquiries, please email us at <a href="mailto:team@example.com">team@example.com</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025</p>
+      <p>
+        <a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a> |
+        <a href="mailto:j.koroma.c@gmail.com">Email Jessica Koroma</a> |
+        <a href="https://www.linkedin.com/in/jkoroma/">LinkedIn Page</a>
+      </p>
     </footer>
   </body>
 </html>

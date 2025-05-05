@@ -7,37 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav-menu.css">
     <link rel="stylesheet" href="css/layout.css">
-    <!-- Favicon links -->
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   </head>
   <body>
-    <!-- Floating Logo remains fixed -->
     <img id="floating-logo" src="images/logo.png" alt="Lightning Logo" width="75" height="75">
-    
-    <!-- Grid Container: Contains Header, Navigation, Aside, and Main -->
     <div class="grid-container">
-      <!-- HEADER -->
-      <header class="page-header">
-        <h1>My First Webpage</h1>
+      <header class="page-header w3-center w3-pale-red">
+        <h1><i class="fa fa-globe"></i> My First Webpage</h1>
       </header>
 
-      <!-- NAVIGATION (Left column, sticky) -->
       <nav class="page-nav">
         <ul class="nav-links">
           <li><a href="index.html">Index</a></li>
@@ -47,7 +27,6 @@
         </ul>
       </nav>
 
-      <!-- ASIDE (Contents, right column, sticky; no bullet points) -->
       <aside class="contents-aside">
         <h2>Contents</h2>
         <ul>
@@ -58,7 +37,6 @@
         </ul>
       </aside>
 
-      <!-- MAIN CONTENT -->
       <main class="page-main">
         <section class="content-box">
           <h2 id="professional">Professional Goals</h2>
@@ -72,6 +50,10 @@
               </a>
               <figcaption>Professional Avatar</figcaption>
             </figure>
+          </div>
+          <div class="w3-card w3-padding w3-margin-top w3-pale-red">
+            <h3 class="w3-text-dark-grey"><i class="fa fa-briefcase"></i> Career Vision</h3>
+            <p>I aim to create intuitive, inclusive, and impactful tech experiences that make life easier and better for users around the world.</p>
           </div>
         </section>
 
@@ -88,6 +70,9 @@
               <figcaption>UX/UI Design Image</figcaption>
             </figure>
           </div>
+          <a href="contact-us.html" class="w3-button w3-purple w3-round w3-margin-top">
+            <i class="fa fa-envelope"></i> Contact Me
+          </a>
         </section>
 
         <section class="content-box">
@@ -103,13 +88,22 @@
               <figcaption>Colorful Hobbies Graphic</figcaption>
             </figure>
           </div>
+          <div class="w3-container w3-pale-yellow w3-margin-top">
+            <h3 class="w3-text-dark-grey"><i class="fa fa-star"></i> Top Skills</h3>
+            <ul class="w3-ul w3-border">
+              <li>Creative Problem Solving</li>
+              <li>Web Design</li>
+              <li>UX Research</li>
+              <li>Team Collaboration</li>
+            </ul>
+          </div>
         </section>
 
         <section id="tourdates">
           <h2>Tour Dates</h2>
-          <table>
+          <table class="w3-table-all w3-hoverable w3-card">
             <caption>Coming to a city near you!</caption>
-            <thead>
+            <thead class="w3-light-grey">
               <tr>
                 <th scope="col">City</th>
                 <th scope="col">Date</th>
@@ -146,9 +140,8 @@
           </table>
         </section>
       </main>
-    </div> <!-- End of grid-container -->
+    </div>
 
-    <!-- FOOTER: Separated from the grid container to prevent overlap -->
     <footer class="page-footer">
       <div class="footer-column">
         <p>CopyRight &copy;2025</p>

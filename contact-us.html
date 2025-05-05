@@ -1,113 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Us</title>
-        <!-- Ensure the path below is correct. 
-             If your CSS file is located in a folder called "css" in the same directory as this HTML file, the following is correct -->
-        <link rel="stylesheet" href="css/style.css"> <!-- Adjusted path to stylesheet -->
-        <link rel="stylesheet" href="css/nav-menu.css"> <!-- Adjusted path to stylesheet -->
-        <link rel="stylesheet" href="css/layout.css"> <!-- Adjusted path to stylesheet -->
-        <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #fffaf0;
+        margin: 0;
+        padding: 0;
+        color: #3b3b3b;
+      }
+      .w3-container {
+        padding: 32px;
+        max-width: 800px;
+        margin: auto;
+      }
+      .w3-input, .w3-select, .w3-radio, textarea {
+        margin-bottom: 16px;
+      }
+      textarea {
+        width: 100%;
+        height: 150px;
+        resize: vertical;
+      }
+      .w3-button {
+        background-color: #d47fa6;
+        color: white;
+      }
+      footer {
+        text-align: center;
+        padding: 24px;
+        background-color: #fff0f5;
+        margin-top: 40px;
+        font-size: 0.9rem;
+      }
+      footer a {
+        color: #d47fa6;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="w3-center w3-padding-32">
+      <h1 class="w3-xxlarge">Contact Us</h1>
+    </header>
 
-        <header>
-            <h1>My First Webpage</h1>
-        </header>
+    <nav class="w3-bar w3-light-grey w3-padding">
+      <a href="index.html" class="w3-bar-item w3-button">Index</a>
+      <a href="contact-us.html" class="w3-bar-item w3-button w3-pale-red">Contact Us</a>
+      <a href="team.html" class="w3-bar-item w3-button">Our Team</a>
+      <a href="#" class="w3-bar-item w3-button w3-right">Sign In</a>
+    </nav>
 
-        <nav class="main-nav">
-            <div class="nav-links">
-              <a href="index.html">Index</a>
-              <a href="contact-us.html" class="active">Contact Us</a>
-              <a href="team.html">Our Team</a>
-            </div>
-            <a class="sign-in" href="#">Sign In</a>
-          </nav>
+    <main class="w3-container w3-white w3-card w3-round-large w3-margin-top">
+      <form action="Success.html" method="get" class="w3-container">
+        <h2 class="w3-text-pink">Send Us a Message</h2>
 
-        <main>
-            <form action="Success.html" method="get" id="contactForm">
-                <fieldset class="contact">
-                    <legend>Contact Us</legend>
-                    <p> 
-                        <label for="name">Name:</label> 
-                        <input type="text" id="name" name="name" required>
-                    </p>
+        <label>Name</label>
+        <input class="w3-input w3-border w3-round" type="text" name="name" required>
 
-                    <p> 
-                        <label for="email">Email:</label> 
-                        <input type="email" id="email" name="email" required>
-                    </p>
+        <label>Email</label>
+        <input class="w3-input w3-border w3-round" type="email" name="email" required>
 
-                    <p> 
-                        <label for="phone">Phone:</label> 
-                        <input type="tel" id="phone" name="phone" required>
-                    </p>
+        <label>Phone</label>
+        <input class="w3-input w3-border w3-round" type="tel" name="phone" required>
 
-                    <p> 
-                        <label for="favColor">Favorite Color:</label> 
-                        <select id="favColor" name="favColor" required>
-                            <option value="">--Select a Color--</option>
-                            <option value="red">Red</option>
-                            <option value="blue">Blue</option>
-                            <option value="green">Green</option>
-                            <option value="yellow">Yellow</option>
-                            <option value="purple">Purple</option>
-                            <option value="orange">Orange</option>
-                            <option value="black">Black</option>
-                            <option value="white">White</option>
-                            <option value="gray">Gray</option>
-                        </select>
-                    </p>
+        <label>Favorite Color</label>
+        <select class="w3-select w3-border w3-round" name="favColor" required>
+          <option value="" disabled selected>--Select a Color--</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+          <option value="purple">Purple</option>
+          <option value="orange">Orange</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="gray">Gray</option>
+        </select>
 
-                    <p>
-                        <label for="topic">Topic:</label>
-                        <select id="topic" name="topic">
-                            <option value="general">General</option>
-                            <option value="professional">Professional</option>
-                            <option value="webtools">Webtools</option>
-                            <option value="hobbies">Hobbies</option>
-                        </select>
-                    </p>
+        <label>Topic</label>
+        <select class="w3-select w3-border w3-round" name="topic">
+          <option value="general">General</option>
+          <option value="professional">Professional</option>
+          <option value="webtools">Webtools</option>
+          <option value="hobbies">Hobbies</option>
+        </select>
 
-                    <p>
-                        <label for="stateTexas">Favorite State:</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="stateTexas" name="state" value="Texas" required> Texas
-                    </p>
-                    <p>
-                        <input type="radio" id="stateCalifornia" name="state" value="California" required> California
-                    </p>
-                    <p>
-                        <input type="radio" id="stateNewYork" name="state" value="New York" required> New York
-                    </p>
-                    <p>
-                        <input type="radio" id="stateFlorida" name="state" value="Florida" required> Florida
-                    </p>
+        <p>Favorite State:</p>
+        <label><input class="w3-radio" type="radio" name="state" value="Texas" required> Texas</label><br>
+        <label><input class="w3-radio" type="radio" name="state" value="California"> California</label><br>
+        <label><input class="w3-radio" type="radio" name="state" value="New York"> New York</label><br>
+        <label><input class="w3-radio" type="radio" name="state" value="Florida"> Florida</label>
 
-                    <!-- Moved Message field below the states -->
-                    <p> 
-                        <label for="message">Message:</label> 
-                        <textarea id="message" name="message" required></textarea> 
-                    </p>
+        <label>Message</label>
+        <textarea class="w3-input w3-border w3-round" name="message" required></textarea>
 
-                    <p>
-                        <input type="submit" value="Send">
-                        <input type="reset" value="Reset">
-                    </p>
-                </fieldset>
-            </form>
-        </main>
+        <button class="w3-button w3-margin-top w3-margin-right w3-round" type="submit">Send</button>
+        <button class="w3-button w3-margin-top w3-round w3-light-grey" type="reset">Reset</button>
+      </form>
+    </main>
 
-        <footer>
-            <p class="copyright">Copyright &copy; 2025</p>
-            <ul>
-                <li><a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a></li>
-                <li><a href="mailto:j.koroma.c@gmail.com">Send an Email to Jessica Koroma</a></li>
-            </ul>
-            <p>Author: <a href="https://www.linkedin.com/in/jkoroma/">LinkedIn Page</a></p>
-        </footer>
-    </body>
+    <footer>
+      <p>&copy; 2025</p>
+      <p>
+        <a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a> |
+        <a href="mailto:j.koroma.c@gmail.com">Email Jessica Koroma</a> |
+        <a href="https://www.linkedin.com/in/jkoroma/">LinkedIn Page</a>
+      </p>
+    </footer>
+  </body>
 </html>
