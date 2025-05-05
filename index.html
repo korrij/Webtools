@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Jessica Koroma: Navigating My Future</title>
+
+    <!-- Your custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav-menu.css">
     <link rel="stylesheet" href="css/layout.css">
+    <!-- Core W3.CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Chosen W3.CSS theme: Blue -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
   </head>
+
   <body>
     <img id="floating-logo" src="images/logo.png" alt="Lightning Logo" width="75" height="75">
+
     <div class="grid-container">
-      <header class="page-header w3-center w3-pale-red">
+      <!-- HEADER: mid‑blue background -->
+      <header class="page-header w3-center w3-theme">
         <h1><i class="fa fa-globe"></i> My First Webpage</h1>
       </header>
 
-      <nav class="page-nav">
+      <!-- NAV: slightly darker blue -->
+      <nav class="page-nav w3-theme-d1">
         <ul class="nav-links">
           <li><a href="index.html">Index</a></li>
           <li><a href="about-us.html">About Us</a></li>
@@ -28,7 +37,8 @@
         </ul>
       </nav>
 
-      <aside class="contents-aside">
+      <!-- ASIDE (Contents) -->
+      <aside class="contents-aside w3-theme-l5">
         <h2>Contents</h2>
         <ul>
           <li><a href="#professional">Professional</a></li>
@@ -38,7 +48,9 @@
         </ul>
       </aside>
 
+      <!-- MAIN CONTENT -->
       <main class="page-main">
+        <!-- Professional Goals Section -->
         <section class="content-box">
           <h2 id="professional">Professional Goals</h2>
           <div class="section-flex">
@@ -52,12 +64,15 @@
               <figcaption>Professional Avatar</figcaption>
             </figure>
           </div>
-          <div class="w3-card w3-padding w3-margin-top w3-pale-red">
-            <h3 class="w3-text-dark-grey"><i class="fa fa-briefcase"></i> Career Vision</h3>
+
+          <!-- Pale‑blue card -->
+          <div class="w3-card w3-padding w3-theme-l2 w3-margin-top">
+            <h3 class="w3-text-theme-d3"><i class="fa fa-briefcase"></i> Career Vision</h3>
             <p>I aim to create intuitive, inclusive, and impactful tech experiences that make life easier and better for users around the world.</p>
           </div>
         </section>
 
+        <!-- Webtools Section -->
         <section class="content-box">
           <h2 id="webtools">Why I am taking Web Design Tools</h2>
           <div class="section-flex">
@@ -71,11 +86,14 @@
               <figcaption>UX/UI Design Image</figcaption>
             </figure>
           </div>
-          <a href="contact-us.html" class="w3-button w3-purple w3-round w3-margin-top">
+          <!-- Button: darker blue with light‑blue hover -->
+          <a href="contact-us.html"
+             class="w3-button w3-theme-d2 w3-hover-theme-l4 w3-round w3-margin-top">
             <i class="fa fa-envelope"></i> Contact Me
           </a>
         </section>
 
+        <!-- Hobbies Section -->
         <section class="content-box">
           <h2 id="hobbies">Personal Hobbies</h2>
           <div class="section-flex">
@@ -89,6 +107,8 @@
               <figcaption>Colorful Hobbies Graphic</figcaption>
             </figure>
           </div>
+
+          <!-- Yellow‑tinted card using built W3 */
           <div class="w3-container w3-pale-yellow w3-margin-top">
             <h3 class="w3-text-dark-grey"><i class="fa fa-star"></i> Top Skills</h3>
             <ul class="w3-ul w3-border">
@@ -100,6 +120,7 @@
           </div>
         </section>
 
+        <!-- Tour Dates Section -->
         <section id="tourdates">
           <h2>Tour Dates</h2>
           <table class="w3-table-all w3-hoverable w3-card">
@@ -143,7 +164,8 @@
       </main>
     </div>
 
-    <footer class="page-footer">
+    <!-- FOOTER: very light blue background -->
+    <footer class="page-footer w3-container w3-theme-l1">
       <div class="footer-column">
         <p>CopyRight &copy;2025</p>
       </div>
@@ -155,7 +177,9 @@
       </div>
       <div class="footer-column">
         <p>
-          Author: <a href="https://www.linkedin.com/in/jkoroma/" style="color: #FFD700; font-weight: bold;">LinkedIn Page</a>
+          Author: <a href="https://www.linkedin.com/in/jkoroma/" class="w3-text-theme-d3" style="font-weight: bold;">
+            LinkedIn Page
+          </a>
         </p>
       </div>
     </footer>
