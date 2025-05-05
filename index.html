@@ -11,29 +11,38 @@
     <link rel="stylesheet" href="css/layout.css">
     <!-- Core W3.CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- Chosen W3.CSS theme: Blue -->
+    <!-- Blue theme -->
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+      /* subtle hover for nav & footer links */
+      .page-nav .nav-links a:hover,
+      .page-footer .footer-links a:hover {
+        background-color: rgba(255,255,255,0.15);
+      }
+    </style>
   </head>
 
   <body>
     <img id="floating-logo" src="images/logo.png" alt="Lightning Logo" width="75" height="75">
 
     <div class="grid-container">
-      <!-- HEADER: mid‑blue background -->
-      <header class="page-header w3-center w3-theme">
+
+      <!-- HEADER: lighter blue + dark-blue text -->
+      <header class="page-header w3-center w3-theme-l3 w3-text-theme-d4">
         <h1><i class="fa fa-globe"></i> My First Webpage</h1>
       </header>
 
-      <!-- NAV: slightly darker blue -->
-      <nav class="page-nav w3-theme-d1">
+      <!-- NAV: very dark blue + white links -->
+      <nav class="page-nav w3-theme-d4">
         <ul class="nav-links">
-          <li><a href="index.html">Index</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="contact-us.html">Contact Us</a></li>
-          <li><a href="team.html">Our Team</a></li>
-          <li><a class="sign-in" href="#">Sign In</a></li>
+          <li><a class="w3-text-white" href="index.html">Index</a></li>
+          <li><a class="w3-text-white" href="about-us.html">About Us</a></li>
+          <li><a class="w3-text-white" href="contact-us.html">Contact Us</a></li>
+          <li><a class="w3-text-white" href="team.html">Our Team</a></li>
+          <li><a class="w3-text-white sign-in" href="#">Sign In</a></li>
         </ul>
       </nav>
 
@@ -88,7 +97,7 @@
           </div>
           <!-- Button: darker blue with light‑blue hover -->
           <a href="contact-us.html"
-             class="w3-button w3-theme-d2 w3-hover-theme-l4 w3-round w3-margin-top">
+             class="w3-button w3-theme-d2 w3-hover-theme-l4 w3-text-white w3-round w3-margin-top">
             <i class="fa fa-envelope"></i> Contact Me
           </a>
         </section>
@@ -108,7 +117,7 @@
             </figure>
           </div>
 
-          <!-- Yellow‑tinted card using built W3 */
+          <!-- Yellow‑tinted card using built W3 -->
           <div class="w3-container w3-pale-yellow w3-margin-top">
             <h3 class="w3-text-dark-grey"><i class="fa fa-star"></i> Top Skills</h3>
             <ul class="w3-ul w3-border">
@@ -164,20 +173,21 @@
       </main>
     </div>
 
-    <!-- FOOTER: very light blue background -->
-    <footer class="page-footer w3-container w3-theme-l1">
+    <!-- FOOTER: darker blue + white text, no yellow -->
+    <footer class="page-footer w3-container w3-theme-d3 w3-text-white">
       <div class="footer-column">
-        <p>CopyRight &copy;2025</p>
+        <p>©2025 Jessica Koroma</p>
       </div>
       <div class="footer-column">
         <ul class="footer-links">
-          <li><a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a></li>
-          <li><a href="mailto:j.koroma.c@gmail.com">Email Jessica Koroma</a></li>
+          <li><a class="w3-text-white" href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a></li>
+          <li><a class="w3-text-white" href="mailto:j.koroma.c@gmail.com">Email Jessica Koroma</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <p>
-          Author: <a href="https://www.linkedin.com/in/jkoroma/" class="w3-text-theme-d3" style="font-weight: bold;">
+          Author: 
+          <a href="https://www.linkedin.com/in/jkoroma/" class="w3-text-white" style="font-weight: bold;">
             LinkedIn Page
           </a>
         </p>
