@@ -300,3 +300,9 @@ thead.w3-light-grey th {
   vertical-align: middle;
   padding: 12px;
 }
+
+.nav-links a.active {
+  background-color: #d47fa6;
+  color: white;
+  border-radius: 5px;
+}
