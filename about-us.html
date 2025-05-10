@@ -1,92 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Jessica Koroma</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #fffaf0;
-        color: #3b3b3b;
-        margin: 0;
-        padding: 0;
-      }
-      main {
-        padding: 40px;
-      }
-      h2 {
-        color: #d47fa6;
-      }
-      footer {
-        text-align: center;
-        padding: 24px;
-        background-color: #fff0f5;
-        margin-top: 40px;
-        font-size: 0.9rem;
-      }
-      footer a {
-        color: #d47fa6;
-        font-weight: bold;
-        text-decoration: none;
-      }
-      footer a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
-    <header class="w3-center w3-padding-32">
-      <h1 class="w3-xxlarge">About Me</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Jessica Koroma</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/nav-menu.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    body {
+      background: url('images/plant-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #7b3e57;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: #7b3e57;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #tip-box {
+      background-color: #f5e1ec;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .jump-links a {
+      display: block;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #e7f0fa;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .jump-links a:hover {
+      background-color: #cfe2f3;
+    }
+  </style>
+</head>
+
+<body>
+  <img id="floating-logo" src="images/logo.png" alt="Lightning Logo" width="75" height="75" />
+
+  <div class="grid-container">
+
+    <!-- Header -->
+    <header class="page-header w3-center w3-theme-l3 w3-text-theme-d4">
+      <h1><i class="fa fa-user"></i> About Us</h1>
     </header>
 
-    <nav class="w3-bar w3-light-grey w3-padding">
-      <a href="index.html" class="w3-bar-item w3-button">Index</a>
-      <a href="about-us.html" class="w3-bar-item w3-button w3-pale-red">About Us</a>
-      <a href="contact-us.html" class="w3-bar-item w3-button">Contact Us</a>
-      <a href="team.html" class="w3-bar-item w3-button">Our Team</a>
-      <a href="#" class="w3-bar-item w3-button w3-right">Sign In</a>
+    <!-- Side Navigation -->
+    <nav class="page-nav w3-theme-d4 w3-bar-block w3-padding w3-center">
+      <a href="index.html" class="w3-bar-item w3-button w3-theme-d1 w3-hover-theme w3-round-large w3-margin-bottom">Home</a>
+      <a href="about-us.html" class="w3-bar-item w3-button w3-theme-d1 w3-hover-theme w3-round-large w3-margin-bottom">About Us</a>
+      <a href="contact-us.html" class="w3-bar-item w3-button w3-theme-d1 w3-hover-theme w3-round-large w3-margin-bottom">Contact</a>
+      <a href="team.html" class="w3-bar-item w3-button w3-theme-d1 w3-hover-theme w3-round-large">Our Team</a>
     </nav>
 
-    <main class="w3-container w3-white w3-card w3-round-large">
-      <section>
-        <h2>Who I Am</h2>
-        <p>
-          My name is Jessica Koroma. I am a passionate and creative learner who loves solving problems and building visually engaging websites. In this class, I learned to use HTML, CSS, and W3.CSS to build structured, styled, and responsive web pages. I enjoy applying design thinking and planning ahead to create a great user experience.
-        </p>
-      </section>
+    <!-- Left Aside Section Links -->
+    <aside class="contents-aside w3-theme-l5 w3-padding jump-links">
+      <a href="index.html">Index</a>
+      <a href="about-us.html">About Us</a>
+      <a href="contact-us.html">Contact Us</a>
+      <a href="team.html">Our Team</a>
+      <a href="#">Sign In</a>
+    </aside>
 
-      <section>
-        <h2>Technologies & Techniques Used</h2>
-        <p>
-          Throughout the project, I used semantic HTML5, external stylesheets, Flexbox, W3.CSS components, and media queries. I structured my pages using sections and div containers, created a responsive navigation menu, and applied consistent design patterns across all pages. I debugged and validated my code to ensure clean, accessible output.
-        </p>
-      </section>
+    <!-- Main Content -->
+    <main class="page-main">
 
-      <section>
-        <h2>How This Class Helped</h2>
-        <p>
-          This class gave me a strong foundation in web design and development. It helped me build confidence using visual layout tools and planning for responsive designs. The hands-on coding experience will support my professional goals of working in tech, especially in UX or front-end development.
-        </p>
-      </section>
+      <div class="w3-card w3-white w3-round-large w3-padding w3-margin-bottom">
+        <h1 class="w3-center">About Jessica Koroma</h1>
+        <p>Hello! I'm Jessica Koroma, a determined and creative learner with a background in biology and a passion for front-end development. I joined this course to expand my tech skills and build a strong foundation in web development.</p>
+      </div>
 
-      <section>
-        <h2>Final Touches</h2>
-        <p>
-          I applied a soft and modern color palette using W3.CSS and custom CSS. The overall site has a clean layout and consistent style. I also ensured that every page links to this About Us page through the navigation bar.
-        </p>
-      </section>
+      <div class="w3-card w3-white w3-round-large w3-padding w3-margin-bottom">
+        <h2 id="learned">🌿 What I Learned in This Class</h2>
+        <ul>
+          <li>Structured accessible sites using semantic <strong>HTML5</strong></li>
+          <li>Designed layouts with <strong>CSS3, Flexbox, Grid,</strong> and <strong>W3.CSS</strong></li>
+          <li>Validated code using W3 tools</li>
+          <li>Created responsive forms and tables</li>
+          <li>Added interactivity with <strong>JavaScript</strong> (functions, loops, conditionals)</li>
+          <li>Used <strong>jQuery</strong> for effects and form validation</li>
+          <li>Published work using <strong>GitHub Pages</strong></li>
+        </ul>
+      </div>
+
+      <div class="w3-card w3-white w3-round-large w3-padding w3-margin-bottom">
+        <h2 id="tech">🧰 Technologies & Methods Used</h2>
+        <p>I used semantic HTML, responsive CSS with W3.CSS, Flexbox, and Grid. JavaScript and jQuery helped add interactivity. I also used DevTools and validators to refine my work.</p>
+      </div>
+
+      <div class="w3-card w3-white w3-round-large w3-padding w3-margin-bottom">
+        <h2 id="goals">🎯 How This Class Supports My Goals</h2>
+        <p>This course confirmed my interest in becoming a front-end developer or UX/UI designer. I plan to build a portfolio, sharpen my skills, and explore internships in tech and design.</p>
+      </div>
+
+      <div class="w3-card w3-white w3-round-large w3-padding w3-margin-bottom">
+        <h2 id="assignments">📂 Projects & Assignments</h2>
+        <ul>
+          <li><a href="index.html">Final Home Page</a></li>
+          <li><a href="https://korrij.github.io/web-dev-process/" target="_blank">Building a Semantic Portfolio Page</a></li>
+          <li><a href="https://korrij.github.io/debugging-html-css/" target="_blank">Debugging HTML and CSS</a></li>
+          <li><a href="https://korrij.github.io/accessibility-feature/" target="_blank">Accessibility Feature</a></li>
+        </ul>
+      </div>
+
+      <!-- jQuery Section -->
+      <div class="w3-card w3-white w3-round-large w3-padding w3-margin-bottom">
+        <button id="toggle-facts" class="w3-button w3-theme-d1">Click to Reveal Extra Facts</button>
+        <div id="extra-facts" class="w3-margin-top" style="display:none;">
+          <p>I enjoy minimalist design and soft layouts.</p>
+          <p>I loved using Flexbox and Grid to create layouts that feel balanced.</p>
+        </div>
+
+        <div id="tip-box" class="w3-margin-top">
+          <h3><i class="fa fa-lightbulb"></i> Web Tip of the Day</h3>
+          <p id="randomTip">Click the button below to see a helpful web development tip!</p>
+          <button onclick="showRandomTip()" class="w3-button w3-theme-d3 w3-margin-top">Show Tip</button>
+        </div>
+      </div>
+
     </main>
+  </div>
 
-    <footer>
-      <p>&copy; 2025</p>
-      <p>
-        <a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a> |
-        <a href="mailto:j.koroma.c@gmail.com">Email Jessica Koroma</a> |
-        <a href="https://www.linkedin.com/in/jkoroma/">LinkedIn Page</a>
-      </p>
-    </footer>
-  </body>
+  <!-- Scripts -->
+  <script>
+    function showRandomTip() {
+      const tips = [
+        "Use semantic HTML for better accessibility and SEO.",
+        "Validate your HTML and CSS to catch errors early.",
+        "Keep your CSS organized with comments and structure.",
+        "Use Flexbox and Grid to make responsive layouts.",
+        "Group related files into folders to stay organized."
+      ];
+      const random = Math.floor(Math.random() * tips.length);
+      document.getElementById("randomTip").textContent = tips[random];
+    }
+
+    $(document).ready(function(){
+      $('#toggle-facts').click(function(){
+        $('#extra-facts').slideToggle();
+      });
+
+      $('#tip-box').hover(
+        function () { $(this).css("background-color", "#f9dce8"); },
+        function () { $(this).css("background-color", "#f5e1ec"); }
+      );
+    });
+  </script>
+</body>
 </html>

@@ -34,15 +34,15 @@ body {
   display: grid;
   grid-template-areas:
     "header header header"
-    "nav main aside";
+    "nav main aside"
+    "footer footer footer";
   grid-template-columns: 200px 1fr 200px;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   gap: 1rem;
+  min-height: 100vh;        /* ensures page fills full height */
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
-
-  
 }
 
 /* Header */
@@ -255,4 +255,130 @@ section#tourdates td {
   margin-top: 10px;
   font-size: 1em;
   color: #6B3E26;
+}
+
+body {
+  margin: 0;
+  background: url('images/plant-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.page-footer {
+  grid-area: footer;
+  background-color: #7b3d7b;
+  color: white;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: #7b3e57;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #7b3e57;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content-box {
+  background-color: #fff;
+  padding: 25px;
+  border: 3px solid #d9a79b;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+#tip-box {
+  background-color: #f5e1ec;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.nav-links li a {
+  display: block;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  background-color: #a05ca0;
+}
+
+#floating-logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 75px;
+  height: auto;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
 }
