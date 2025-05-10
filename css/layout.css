@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3 {
+  color: #4b1e4d; /* deep plum (high contrast and elegant) */
+}
+
 html {
   scroll-padding-top: 100px;
   scroll-behavior: smooth;
@@ -236,7 +240,7 @@ section#tourdates td {
 }
 
 .team-gallery figure {
-  background-color: #ffe0e6;
+  background-color: #eb1e47;
   border: 2px solid #ccc;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   padding: 10px;
@@ -339,7 +343,7 @@ a:hover {
 }
 
 #tip-box {
-  background-color: #f5e1ec;
+  background-color: #f98fca;
   padding: 15px;
   border-radius: 10px;
   margin-top: 20px;
