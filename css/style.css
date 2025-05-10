@@ -11,7 +11,7 @@ html, body {
 /* Header */
 header {
   position: relative;
-  border-bottom: 3px solid #D97777;
+  border-bottom: 3px solid #d977c4;
   padding: 20px;
   text-align: center;
   background: #F8C8C8;
@@ -306,4 +306,18 @@ thead.w3-light-grey th {
   background-color: #d47fa6;
   color: white;
   border-radius: 5px;
+}
+
+/* Improve nav contrast and clarity */
+.page-nav .w3-bar-item.w3-button {
+  color: #ffffff !important;             /* Make text bright white */
+  background-color: #5a1f5a !important;  /* Deep purple for contrast */
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.page-nav .w3-bar-item.w3-button:hover {
+  background-color: #8B2C36 !important; /* Rich hover contrast */
+  color: #ffffff !important;
 }
